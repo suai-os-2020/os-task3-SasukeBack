@@ -507,6 +507,5 @@ int lab3_init()
 	CloseHandle(semaphore_4);
 	CloseHandle(semaphore_5);
 	CloseHandle(semaphore_6);
-	system("pause");
 	return 0;
 }
