@@ -441,7 +441,7 @@ DWORD WINAPI thread_p(LPVOID thread_name)
 int lab3_init()
 {
 	mutexxx = CreateMutex(NULL, FALSE, NULL);
-	semaphore_1 = CreateSemaphore(NULL, 0, 1, NULL);
+	semaphore_1 = CreateSemaphore(NULL, 1, 1, NULL);
 
 	if (semaphore_1 == NULL)
 	{
@@ -449,7 +449,7 @@ int lab3_init()
 		return 1;
 	}
 
-	semaphore_2 = CreateSemaphore(NULL, 1, 1, NULL);
+	semaphore_2 = CreateSemaphore(NULL, 0, 1, NULL);
 
 	if (semaphore_2 == NULL)
 	{
